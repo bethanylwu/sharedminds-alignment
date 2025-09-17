@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="date-container">
+        <div class="date-selector">
+            <div class="dropdown-group">
+                <select id="year" name="year">
+                    <option value="">YYYY</option>
+                </select>
+            </div>
+
+            <div class="dropdown-group">
+                <select id="month" name="month">
+                    <option value="">MM</option>
+                </select>
+            </div>
+
+            <div class="dropdown-group">
+                <select id="day" name="day">
+                    <option value="">DD</option>
+                </select>
+            </div>
+
+            <div class="dropdown-group">
+                <button id="enterButton">Enter</button>
+            </div>
+        </div>
+        <!-- <div class="selected-date" id="selectedDate">Please select a date</div> -->
+        <div class="error-message" id="errorMessage"></div>
+        <div class="image-container" id="imageContainer"></div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+
+</html>
