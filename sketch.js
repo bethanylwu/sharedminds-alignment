@@ -393,6 +393,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add Enter button event listener
     enterButton.addEventListener('click', handleEnterClick);
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            handleEnterClick();
+        }
+    });
 
     // Initialize dropdowns and button state
     populateYears();
